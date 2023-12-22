@@ -1,0 +1,91 @@
+body {
+  /* Arka plan rengi belirleme (isteğe bağlı) */
+  background-color: #b2eaef;
+
+  /* Arka plan görseli eklemek */
+  background-image: url('arka_plan_resmi.jpg');
+
+  /* Arka plan resminin tekrarını engellemek */
+  background-repeat: no-repeat;
+
+  /* Arka plan resminin sayfa boyunca genişlemesini sağlamak */
+  background-size: cover;
+
+  /* Arka plan resminin yerini belirlemek (isteğe bağlı) */
+  background-position: center center;
+
+  /* Sayfa içeriğini belirli bir mesafe içinde tutmak için padding eklemek */
+  padding: 20px;
+}
+
+
+@media (min-width: 770px) {
+  #card {
+    max-width: 500px;
+  }
+
+  #card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 770px) {
+  #card {
+    max-width: 400px;
+  }
+
+  #card img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+#card p {
+  font-size: 15px;
+}
+
+/* Menü Filtre Düğmeleri Stilleri */
+.filter-btn {
+  padding: 10px 20px; /* Düğme içeriği etrafındaki iç boşluğu ayarlar */
+  font-size: 16px; /* Düğme metin boyutu */
+  font-weight: bold; /* Düğme metin kalınlığı */
+  border-radius: 5px; /* Düğme köşe yuvarlama */
+}
+
+.filter-btn:hover {
+  background-color: #343a40; /* Düğme üzerine gelindiğinde arka plan rengi */
+  color: #fff; /* Düğme üzerine gelindiğinde metin rengi */
+}
+
+.filter-btn[data-id="all"] {
+  background-color: #007bff; /* Hepsi düğmesinin arka plan rengi */
+  color: #fff; /* Hepsi düğmesinin metin rengi */
+}
+
+.filter-btn[data-id="breakfast"] {
+  background-color: #dc3545; /* Kahvaltı düğmesinin arka plan rengi */
+  color: #fff; /* Kahvaltı düğmesinin metin rengi */
+}
+
+.filter-btn[data-id="lunch"] {
+  background-color: #dc3545; /* Öğle Yemeği düğmesinin arka plan rengi */
+  color: #fff; /* Öğle Yemeği düğmesinin metin rengi */
+}
+
+.filter-btn[data-id="shakes"] {
+  background-color: #dc3545; /* İçeçekler düğmesinin arka plan rengi */
+  color: #fff; /* İçeçekler düğmesinin metin rengi */
+}
+
+/* Başlık Stili */
+h1.text-center {
+  font-size: 3rem; /* Başlık metin boyutu */
+  color: #050505; /* Başlık metin rengi */
+  text-shadow: 8px 8px 12px rgba(249, 3, 3, 0.276); /* Başlık metni gölgelendirme */
+  margin-bottom: 40px; /* Başlık altındaki boşluk */
+  font-family: 'Arial', sans-serif; /* Başlık için font ailesi */
+  font-weight: bold; /* Başlık metin kalınlığı */
+}
+
